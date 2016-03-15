@@ -123,7 +123,7 @@ static void command_common_help(void)
           "s:	status\n"
           "c:	console mode\n"
           "0-4:	layer0-4(F10-F4)\n"
-          "Paus:	bootloader\n"
+          "Esc:	bootloader\n"
 
 #ifdef KEYBOARD_LOCK_ENABLE
           "Caps:	Lock\n"
@@ -233,6 +233,7 @@ static bool command_common(uint8_t code)
             command_state = CONSOLE;
             break;
         case KC_PAUSE:
+        case KC_ESC:
             clear_keyboard();
             print("\n\nbootloader... ");
             wait_ms(1000);
@@ -365,7 +366,6 @@ static bool command_common(uint8_t code)
             }
             break;
 #endif
-        case KC_ESC:
         case KC_GRV:
         case KC_0:
         case KC_F10:
