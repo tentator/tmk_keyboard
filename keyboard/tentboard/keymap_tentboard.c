@@ -4,23 +4,23 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: base qwerty layout - when fn0 is pressed then action defined later down will happen (momentarily activate layer 1) */
     KEYMAP(ESC,  1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC, HOME, \
            TAB,  Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS, PGUP, \
-           CAPS, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,ENT,       PGDN, \
+           DEL,  A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,ENT,       PGDN, \
            LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RSFT,UP,        END,  \
            LCTL, LGUI,LALT,          SPC,           RALT,FN0 ,RCTL,LEFT,DOWN,RGHT),
 
     /* 1: fn layer 1 - function keys */
     KEYMAP(GRV,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, PSCR,PAUS,DEL,  INS, \
-           WHOM, CALC,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,VOLD,VOLU,MUTE, PGUP, \
-           DEL,  TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,FN1,       PGDN, \
-           TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PGUP,      END,  \
-           TRNS, TRNS,TRNS,          TRNS,          TRNS,TRNS,TRNS,HOME,PGDN,END),
+           CALC, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, VOLD,VOLU,MUTE, SLCK, \
+           CAPS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,APP,       NLCK, \
+           TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,PGUP,      WHOM,  \
+           TRNS, TRNS,TRNS,          FN1,           TRNS,TRNS,TRNS,HOME,PGDN,END),
 
     /* 2: fn layer 2 - multimedia */
-    KEYMAP(CALC, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, VOLD,VOLU,MUTE, INS, \
-           WHOM, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,WH_L,WH_D,WH_U,WH_R,TRNS,TRNS,TRNS, PGUP, \
-           TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MS_L,MS_D,MS_U,MS_R,TRNS,TRNS,      PGDN, \
+    KEYMAP( PWR, SLEP,WAKE,MNXT,MPRV,MSTP,MPLY,MSEL,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, HOME, \
+           WSCH, WHOM,WBAK,WFWD,WSTP,WREF,WFAV,WH_L,WH_D,WH_U,WH_R,TRNS,TRNS,TRNS, PGUP, \
+           MYCM, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MS_L,MS_D,MS_U,MS_R,TRNS,ACL0,      PGDN, \
            TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,BTN1,BTN2,BTN3,BTN4,TRNS,MS_U,      END,  \
-           TRNS, TRNS,TRNS,          ACL0,          TRNS,TRNS,TRNS,MS_L,MS_D,MS_R),
+           TRNS, TRNS,TRNS,          TRNS,          TRNS,TRNS,TRNS,MS_L,MS_D,MS_R),
   
 /* do not use the rest at the moment 
     // qwerty 
