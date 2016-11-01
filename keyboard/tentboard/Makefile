@@ -41,7 +41,7 @@
 # Target file name (without extension).
 TARGET = tentboard
 
-# Directory common source filess exist
+# Directory common source files exist
 TMK_DIR = ../../tmk_core
 
 # Directory keyboard dependent files exist
@@ -141,3 +141,5 @@ include $(TMK_DIR)/protocol.mk
 ##### Enable PS/2 TrackPoint END
 include $(TMK_DIR)/common.mk
 include $(TMK_DIR)/rules.mk
+
+#### PROGRAM_CMD avrdude -p atmega32u4 -c avr109 -P COM4 -b57600 -U flash:w:Soarer_at2usb_v1.12_atmega32u4_ProMicro_ResetLED.hex
