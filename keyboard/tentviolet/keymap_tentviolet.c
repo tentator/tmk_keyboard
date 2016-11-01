@@ -6,12 +6,12 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            TAB,  Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,BSLS, \
            DEL,  A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,ENT,  \
            LSFT, Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,RBRC,FN0, \
-           LCTL, LGUI,LALT,          SPC,           RALT,FN2 ,FN1,EQL, FN3),
+           LCTL, LGUI,LALT,          SPC,           RALT,FN2 ,FN1, EQL, FN3),
 
     /* 1: fn layer 1 - function keys */
     KEYMAP(GRV,  F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, PSCR,INS,  \
            CALC, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, VOLD,HOME, \
-           CAPS, LEFT,DOWN,RGHT,TRNS,TRNS,TRNS,TRNS,TRNS,UP,  TRNS,VOLU,PGUP, \
+           CAPS, LEFT,DOWN,RGHT,UP  ,TRNS,TRNS,TRNS,TRNS,UP,  TRNS,VOLU,PGUP, \
            TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,LEFT,DOWN,RGHT,TRNS,PGDN, \
            TRNS, TRNS,TRNS,          TRNS,          TRNS,TRNS,TRNS,DEL, END),
 

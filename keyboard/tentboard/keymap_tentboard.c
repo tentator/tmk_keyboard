@@ -21,7 +21,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
            MYCM, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,MS_L,MS_D,MS_U,MS_R,TRNS,ACL0,      PGDN, \
            TRNS, TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,BTN1,BTN2,BTN3,BTN4,TRNS,MS_U,      END,  \
            TRNS, TRNS,TRNS,          TRNS,          TRNS,TRNS,TRNS,MS_L,MS_D,MS_R),
-  
+
 /* do not use the rest at the moment 
     // qwerty 
     KEYMAP_ANSI(
@@ -56,7 +56,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 const uint16_t PROGMEM fn_actions[] = {
     /* TentBoard Layout */
     [0] = ACTION_LAYER_TAP_KEY(1, KC_MUTE),  // to Fn overlay 1
-	[1] = ACTION_LAYER_TOGGLE(2),            // toggle mouse/mmedia overlay
+    [1] = ACTION_LAYER_TOGGLE(2),            // toggle mouse/mmedia overlay
 };
 
 /* other possibilities:
