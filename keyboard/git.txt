@@ -1,0 +1,7 @@
+git status
+git add .
+git commit -m "up"
+push origin master
+git status
+#git pull
+
