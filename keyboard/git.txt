@@ -1,7 +1,19 @@
+-- ordinary maintenance:
 git status
-git add .
-git commit -m "up"
+(git add .)
+git commit -am "some text"
 git push origin master
-git status
-#git pull
+-- to sync if remote is newer:
+git pull
+-- to sync from father:
+(git remote add upstream http://github.com/tmk/tmk_keyboard)
+git remote -v
+git fetch upstream
+git checkout master
+git merge | rebase upstream/master
+(maybe even git pull upstream master ??)
+resolve conflicts! when all is set clean you can as well
+git push origin master
+probably you even need to force it if rebased:
+git push -f origin master
 
