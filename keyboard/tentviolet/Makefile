@@ -98,6 +98,12 @@ ARCH = AVR8
 #     CPU clock adjust registers or the clock division fuses), this will be equal to F_CPU.
 F_USB = $(F_CPU)
 
+
+# in order to do make program work and use avrdude on the pro-micro
+PROGRAM_CMD = avrdude -p $(MCU) -c avr109 -P COM4 -b 57600 -U flash:w:$(TARGET).hex
+#### PROGRAM_CMD avrdude -p atmega32u4 -c avr109 -P COM4 -b57600 -U flash:w:Soarer_at2usb_v1.12_atmega32u4_ProMicro_ResetLED.hex
+
+
 # Interrupt driven control endpoint task(+60)
 OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 
@@ -141,5 +147,3 @@ include $(TMK_DIR)/protocol/lufa.mk
 ##### Enable PS/2 TrackPoint END
 include $(TMK_DIR)/common.mk
 include $(TMK_DIR)/rules.mk
-
-#### PROGRAM_CMD avrdude -p atmega32u4 -c avr109 -P COM4 -b57600 -U flash:w:Soarer_at2usb_v1.12_atmega32u4_ProMicro_ResetLED.hex
