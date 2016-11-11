@@ -19,7 +19,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <avr/pgmspace.h>
 #include "keycode.h"
 #include "action.h"
 #include "action_macro.h"
@@ -29,9 +28,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "debug.h"
 #include "keymap.h"
 
-
-extern const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS];
-extern const uint16_t fn_actions[];
+/* old to be removed leftovers after merging/rebasing latest hasu tmk
+ * extern const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS];
+ * extern const action_t fn_actions[];
+ */
 
 
 /* TentBoard keymap definition macro

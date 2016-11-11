@@ -79,8 +79,18 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     /* keycodes: https://github.com/tmk/tmk_core/blob/master/doc/keycode.txt */
 };
-const uint16_t PROGMEM fn_actions[] = {
+const action_t PROGMEM fn_actions[] = {
     /* VioletTentBoard Layout: cursor keys are down there, hidden between the metas! */
+    [0] = ACTION_LAYER_MOMENTARY(1),
+    [1] = ACTION_LAYER_MOMENTARY(1),
+    [2] = ACTION_LAYER_MOMENTARY(1),
+    [3] = ACTION_LAYER_MOMENTARY(1),
+    [4] = ACTION_LAYER_MOMENTARY(1),
+    [5] = ACTION_LAYER_MOMENTARY(1),
+    [6] = ACTION_LAYER_MOMENTARY(1),
+    [7] = ACTION_LAYER_MOMENTARY(1),
+
+/*
     [0] = ACTION_MODS_TAP_KEY(MOD_RSFT, KC_UP),       // rshiftkey: momentary right shift if hold, up if tapped
     [1] = ACTION_MODS_TAP_KEY(MOD_RCTL, KC_DOWN),     // rctrlkey: momentary rctrl if hold, down if tapped
     [2] = ACTION_LAYER_TAP_KEY(1, KC_LEFT),           // fnkey: momentary function overlay 1 if hold, left if tapped
@@ -89,6 +99,7 @@ const uint16_t PROGMEM fn_actions[] = {
     [5] = ACTION_MODS_KEY(MOD_RCTL|MOD_RSFT, KC_ESC), // fn5key: taskmanager (rctrl + rshft + esc)
     [6] = ACTION_MODS_KEY(MOD_LGUI, KC_PAUS),         // fn6key: systeminfo (win + pause)
     [7] = ACTION_LAYER_TAP_KEY(3, KC_SPACE),          // spacefnkey: holding space enables overlay 3, is particularely fast and easy
+*/
 
     /* actions: https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md
         ACTION_LAYER_MOMENTARY(layer), activate layer when holding down the FN key

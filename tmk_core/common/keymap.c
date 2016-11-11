@@ -243,7 +243,9 @@ __attribute__ ((weak))
 action_t keymap_fn_to_action(uint8_t keycode)
 {
 #if defined(__AVR__)
-    return (action_t)pgm_read_word(&fn_actions[FN_INDEX(keycode)]);
+    // commented out because incompatible with winavr-gcc:
+    // return (action_t)pgm_read_word(&fn_actions[FN_INDEX(keycode)]);
+    return (action_t){ .code = pgm_read_word(&fn_actions[FN_INDEX(keycode)]) };
 #else
     return fn_actions[FN_INDEX(keycode)];
 #endif

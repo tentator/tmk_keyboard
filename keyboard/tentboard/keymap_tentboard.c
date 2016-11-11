@@ -56,7 +56,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     */
 };
 
-const uint16_t PROGMEM fn_actions[] = {
+const action_t PROGMEM fn_actions[] = {
     /* TentBoard Layout */
     [0] = ACTION_LAYER_TAP_KEY(1, KC_MUTE),  // to Fn overlay 1
     [1] = ACTION_LAYER_TOGGLE(2),            // toggle mouse/mmedia overlay    
