@@ -63,6 +63,7 @@ CONFIG_H = config.h
 # MCU name
 #MCU = at90usb1287
 MCU = atmega32u4
+#MCU = atmega328p
 
 # Processor frequency.
 #     This will define a symbol, F_CPU, in all source code files equal to the
@@ -142,3 +143,4 @@ include $(TMK_DIR)/common.mk
 include $(TMK_DIR)/rules.mk
 
 #### PROGRAM_CMD avrdude -p atmega32u4 -c avr109 -P COM4 -b57600 -U flash:w:Soarer_at2usb_v1.12_atmega32u4_ProMicro_ResetLED.hex
+#### avrdude -c arduino -p atmega328p -vv -b 57600 -P COM6 -U flash:w:tent.hex
