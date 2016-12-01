@@ -68,6 +68,17 @@ uint8_t ps2_mouse_init(void) {
     print("ps2_mouse_init: send 0xF0: ");
     phex(rcv); phex(ps2_error); print("\n");
 
+/*
+ ptson = 0;       Press to Select
+ inertia= 6;      Negative Inertia
+ thr = 8;         Threshold
+ uthr = 255;      Up Threshold
+ snstvty = 128;   Sensitivity
+ jkcur = 135;     Jenks Curvature
+ ztc = 38;        Z Time Constant
+ skipback = 0;    Skip backups on release
+ mcomdis = 0;     External device disable
+*/
     // set TrackPoint sensitivity
     print("ps2_mouse_init: send 0xE2: ");
     rcv = ps2_host_send(0xE2);
@@ -139,8 +150,8 @@ uint8_t ps2_mouse_init(void) {
     rcv = ps2_host_send(0x5C);
     phex(rcv); phex(ps2_error); print("\n");
     // default PtS threshold is 0x08
-    print("ps2_mouse_init: send 0x04/4: ");
-    rcv = ps2_host_send(0x04);
+    print("ps2_mouse_init: send 0x05 (was 4): ");
+    rcv = ps2_host_send(0x05);
     phex(rcv); phex(ps2_error); print("\n");
 
     // set TrackPoint Press to Select time constant (zTc)
