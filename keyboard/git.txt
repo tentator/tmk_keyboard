@@ -10,8 +10,8 @@ git pull
 git remote -v
 git fetch upstream
 git checkout master
-git merge | rebase upstream/master
-(maybe even git pull upstream master ??)
+git merge upstream/master
+(maybe even git pull upstream master ?? also git rebase upstream master)
 resolve conflicts! when all is set clean you can as well
 git push origin master
 probably you even need to force it if rebased:
