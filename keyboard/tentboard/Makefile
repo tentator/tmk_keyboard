@@ -59,6 +59,9 @@ endif
 
 CONFIG_H = config.h
 
+# flashing on pro-micro
+PROGRAM_CMD = avrdude -p atmega32u4 -c avr109 -P COM4 -b57600 -U flash:w:$(TARGET).hex
+
 
 # MCU name
 #MCU = at90usb1287
