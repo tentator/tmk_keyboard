@@ -139,7 +139,7 @@ uint8_t ps2_mouse_init(void) {
     rcv = ps2_host_send(0x5C);
     phex(rcv); phex(ps2_error); print("\n");
     // default PtS threshold is 0x08
-    print("ps2_mouse_init: send 0x04: ");
+    print("ps2_mouse_init: send 0x04/4: ");
     rcv = ps2_host_send(0x04);
     phex(rcv); phex(ps2_error); print("\n");
 
