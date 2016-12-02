@@ -89,7 +89,7 @@ const action_t PROGMEM fn_actions[] = {
     [5] = ACTION_MODS_KEY(MOD_RCTL|MOD_RSFT, KC_ESC), // fn5key: taskmanager (rctrl + rshft + esc)
     [6] = ACTION_MODS_KEY(MOD_LGUI, KC_PAUS),         // fn6key: systeminfo (win + pause)
     [7] = ACTION_LAYER_TAP_KEY(3, KC_SPACE),          // spacefnkey: holding space enables overlay 3, is particularely fast and easy
-	[8] = ACTION_MODS_TAP_KEY(KC_SLSH, MOD_RSFT),        // slash/?: holding slash/? will act as a shift key (usefull to select text upwards)
+	[8] = ACTION_MODS_TAP_KEY(MOD_RSFT, KC_SLSH),        // slash/?: holding slash/? will act as a shift key (usefull to select text upwards)
 
     /* actions: https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md
         ACTION_LAYER_MOMENTARY(layer), activate layer when holding down the FN key
