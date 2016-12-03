@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define MATRIX_HAS_GHOST
 
 /* Set 0 if debouncing isn't needed 5 is default, consider also that if PS2 mouse is enabled you might need to set it to 1 because that slows down the polling ! */
-#define DEBOUNCE    2
+#define DEBOUNCE    3
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
